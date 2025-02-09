@@ -10,7 +10,7 @@ html, body {
     text-align: center;
     align-items: center;
 }
-/*TOPO*/
+/*CONTEÚDO*/
 .topo {
     background-color: #ff3ff3;
     border-radius: 20px;
@@ -25,7 +25,6 @@ html, body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-/*TÍTULO*/
 .titulo {
     color: #fff;
     font-size: 28px;
