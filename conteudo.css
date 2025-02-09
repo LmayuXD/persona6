@@ -109,10 +109,97 @@ svg path {
 #hamburger .active span {
   transform: rotate(45deg);
 }
+#hamburger .active span::before {
+  top: unset;
+  width: 24px;
+  transform: rotate(-90deg);
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.menu > div {
+  height: 100%;
+  display: flex;
+}
+.menu a {
+  position: relative;
+  top: 120px;
+  line-height: 70%;
+  text-decoration: none;
+  color: var(--link-color);
+}
+.menu a span {
+  font-size: 20px;
+  margin-right: 2em;
+  font-family: "Ayer";
+}
+.menu-item {
+  position: relative;
+}
+.menu-item::after {
+  content: "";
+  position: absolute;
+  top: 100px;
+  left: -20px;
+  width: 120%;
+  height: 200%;
+  background: var(--overlay-bg);
+  margin: 0 auto;
+}
+.menu-conteiner {
+  width: 70%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.primeiro-menu {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.primeiro-menu .menu-conteiner .wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.primeiro-menu a {
+  text-transform: uppercase;
+  font-size: 125px;
+  font-weight: 500;
+}
+
+.segundo-menu {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8em;
+}
+.segundo-menu .menu-item a {
+  font-family: "Ayer";
+  font-size: 36px;
+}
+.segundo-menu .menu-conteiner .wrapper:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 /*CONTEÚDO DO JOGO*/
 .conteudo {
   display: none;
 }
+
 /*PRÉ-LOAD || animação foi pega do "uiverse.io"*/
 .box-load {
     width: 200px;
