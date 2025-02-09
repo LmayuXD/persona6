@@ -63,12 +63,12 @@
                 <div class="wrapper">
 
                     <div class="menu-item">
-                        <a href="#">Gule</a>
+                        <a href="#">Continuar</a>
                         <div class="menu-item-revealer"></div><!--MENU-ITEM-REVEALER-->
                     </div><!--MENU ITEM-->
 
                     <div class="menu-item">
-                        <a href="#">Gule</a>
+                        <a href="#">Sair</a>
                         <div class="menu-item-revealer"></div><!--MENU-ITEM-REVEALER-->
                     </div><!--MENU ITEM-->
 
@@ -76,7 +76,7 @@
                 <div class="wrapper">
 
                     <div class="menu-item">
-                        <a href="#">Bah</a>
+                        <a href="#">Créditos</a>
                         <div class="menu-item-revealer"></div><!--MENU-ITEM-REVEALER-->
 
                     </div><!--MENU ITEM-->
@@ -101,7 +101,7 @@
         //setup
         const tl = gsap.timeline({ paused: true });
         let path = document.querySelector("path");
-        let spanBefore = CSSRulePlugin.getRule("#hamburger span:before")
+        let spanBefore = CSSRulePlugin.getRule("#hamburger span:before");
 
         gsap.set(spanBefore, { background: "#000" });
         gsap.set(".menu", { visibility: "hidden" });
@@ -123,7 +123,7 @@
 
         function revelarItensDoMenu() {
             const start = "M0 502S175 272 500 272s500 230 500 230V0H0Z";
-            const end = "M0, 1005S175, 995, 500, 995s500, 5, 500, 5V0H0Z";
+            const end = "M0,1005S175,995,500,995s500,5,500,5V0H0Z";
 
             const power2 = "power2.inOut";
             const power4 = "power4.inOut";
@@ -136,7 +136,7 @@
                 ease: power4,
             });
 
-            tl.to("hamburger span", 1, {
+            tl.to("#hamburger span", 1, {
                 background: "#e2e2dc",
                 ease: power2,
             },
@@ -156,8 +156,39 @@
                 border: "1px solid #e2e2dc",
                 ease: power4,
             },
-            "<"
-        );
+                "<"
+            );
+            tl.to(path, 0.8, {
+                attr: {
+                    d: start,
+                },
+                ease: power2.easeIn,
+            },
+                "<"
+            ).to(path, 0.8, {
+                attr: {
+                    d: end,
+                },
+                ease: power2.easeIn,
+            },
+                "<"
+            );
+
+            tl.to(".menu", 1, {
+                visibility: "visible",
+            },
+                "-=0.5"
+            );
+
+            tl.to(".menu-item > a", 1, {
+                top: 0,
+                ease: "power3.out",
+                stagger: {
+                    amount: 0.5,
+                },
+            },
+                "-=1"
+            ).reverse();
         }
     </script>
 </body>

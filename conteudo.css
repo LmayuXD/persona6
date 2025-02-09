@@ -195,6 +195,11 @@ svg path {
   flex-direction: column;
   gap: 30px;
 }
+
+.primeiro-menu .menu-conteiner .wrapper .menu-item:nth-child(1) a,
+.primeiro-menu .menu-conteiner .wrapper .menu-item:nth-child(3) a {
+  margin-left: 1em;
+}
 /*CONTEÚDO DO JOGO*/
 .conteudo {
   display: none;
