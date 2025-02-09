@@ -1,15 +1,15 @@
-/*CABEÇALHO*/
+/*GERAL*/
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    border: 0;
 }
-
-body {
+html, body {
+    width: 100%;
+    height: 100%;
     text-align: center;
     align-items: center;
 }
-
 /*TOPO*/
 .topo {
     background-color: #ff3ff3;
