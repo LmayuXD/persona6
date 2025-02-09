@@ -7,6 +7,6 @@ function loading() {
 //CONTEÚDO
 
 //SAIR DO JOGO
-function sair(){
+function sair() {
     window.close();
 }
