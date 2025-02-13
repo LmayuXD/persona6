@@ -17,7 +17,7 @@ html, body {
 .topo {
     background-color: transparent;
     border-radius: 20px;
-    border: solid 1px red;
+    border: solid 1px transparent;
     width: 1000px;
     height:50em;
     display: flex;
@@ -32,6 +32,7 @@ html, body {
     color: #fff;
     font-size: 100px;
     position: relative;
+    text-shadow: 10px 5px 8px black;
     top: 30px;
     font-family: "Roslindale Display Condensed";
     font-weight: 300;
@@ -42,14 +43,14 @@ input {
     width: 300px;
     height: 100px;
     border-radius: 20px;
-    border: solid 3px blue;
     font-size: 50px;
     position: relative;
     top: 80px;
     right: 300px;
     font-family: "Roslindale Display Condensed";
+    cursor: pointer ;
 }
 input:hover {
-    color: red;
-    background-color: blue;
+    color: #fff;
+    background-color: black;
 }
