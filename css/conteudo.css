@@ -12,7 +12,9 @@
 html, body {
     width: 100vw;
     height: 100vh;
-    background: var(--bg);
+    background: url(imagens/fundo_corredor.jpg);
+    background-size: cover;
+    background-position: center;
     font-family: "Roslindale Display Condensed";
     overflow: hidden;
 }

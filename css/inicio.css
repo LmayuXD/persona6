@@ -15,11 +15,11 @@ html, body {
 }
 /*CONTEÚDO*/
 .topo {
-    background-color: transparent;
+    background-color: black;
     border-radius: 20px;
     border: solid 1px transparent;
     width: 1000px;
-    height:50em;
+    height:40em;
     display: flex;
     flex-direction: column;
     align-items: center;
