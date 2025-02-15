@@ -100,11 +100,18 @@
     </div><!--CONTEÚDO-->
 
     <!--JAVASCRIPT-->
-    <script src="js/conteudo.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/CSSRulePlugin.min.js"></script>
 
-    <!--MENU-->
+    <!--JAVASCRIPT TELA DE CARREGAMENTO-->
+    <script>
+        function loading() {
+            document.getElementsByClassName("box-load")[0].style.display = "none";
+            document.getElementsByClassName("conteudo")[0].style.display = "block";
+        }
+    </script>
+
+    <!--JAVASCRIPT DO MENU-->
     <script>
         //setup
         const tl = gsap.timeline({ paused: true });
@@ -198,7 +205,50 @@
                 "-=1"
             ).reverse();
         }
-        
+
+    </script>
+
+    <!--SAIR DO JOGO: MENU-->
+    <script>
+        function sair() {
+            window.close();
+        }
+    </script>
+
+    <!--JAVASCRIPT CONTEÚDO D/JOGO-->
+    <script>
+        document.getElementById("next-btn").style.cursor = "pointer";
+
+        const historia = {
+            ato1: {
+                Text: "IS THAT THE GRIM REAPER??",
+                Image: "joker.jpeg",
+                next: []
+            },
+            ato2: {
+                Text: "Junpei? More like stupei!",
+                Image: "makoto.jpeg",
+                next: []
+            }
+        };
+
+        function carregarCena(cenaChave) {
+            const cena = historia[cenaChave];
+
+            document.getElementById("texto-da-historia").textContent = cena.Text;
+            document.getElementById("cena-do-personagem").src = cena.Image;
+
+            const proxCena = document.getElementById("next-btn");
+
+            cena.next.forEach(nexts => {
+                const button = document.createElement("button");
+                button.textContent = nexts.Text;
+                button.classList.add("next-button");
+                button.addEventListener("click", () => carregarCena(nexts));
+                proxCena.appendChild(button);
+            });
+        };
+        carregarCena("ato1");
     </script>
 </body>
 
