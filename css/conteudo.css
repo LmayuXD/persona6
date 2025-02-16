@@ -206,6 +206,53 @@ svg path {
 .conteudo {
   display: none;
 }
+#dialogo {
+  border: solid 3px #16164b;
+  border-radius: 10px;
+  background-color: #400fa225;
+  backdrop-filter: blur(10px);
+  width: 80%;
+  height: 20%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 100%);
+}
+#texto-da-historia {
+  font-size: 35px;
+  position: relative;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+#next-btn {
+  font-family: "Roslindale Display Condensed";
+  font-size: 25px;
+  background: #e2e2dc;
+  border: solid 2px red;
+  border-radius: 10px;
+  height: 50px;
+  width: 150px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(330%, 530%);
+  cursor: pointer;
+}
+#next-btn:hover {
+  background: #0a0a0a;
+  color: #e2e2dc;
+}
+
+#imagem-personagem {
+  width: 30%;
+  height: 80%;
+  background: transparent ;
+  border: solid 1px red;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-160%, -40%);
+}
 
 /*PRÉ-LOAD || animação foi pega do "uiverse.io"*/
 .box-load {
