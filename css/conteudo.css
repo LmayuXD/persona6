@@ -224,25 +224,6 @@ svg path {
   margin-left: 10px;
   margin-top: 10px;
 }
-.resposta-btn {
-  font-family: "Roslindale Display Condensed";
-  font-size: 25px;
-  background: #e2e2dc;
-  border: solid 2px red;
-  border-radius: 10px;
-  height: 50px;
-  width: 150px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(330%, 530%);
-  cursor: pointer;
-}
-.resposta-btn:hover {
-  background: #0a0a0a;
-  color: #e2e2dc;
-}
-
 #imagem-personagem {
   width: 30%;
   height: 80%;
@@ -251,10 +232,33 @@ svg path {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-160%, -40%);
+  transform: translate(-180%, -40%);
+}
+#cena-do-personagem {
+  width: 140%;
+  height: 100%;
+  object-fit: contain;
+}
+.resposta-btn {
+  display: block;
+  width: 200px;
+  margin: 10px auto;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.resposta-btn:hover {
+  background-color: #45a049;
 }
 #respostas {
-  display: none;
+  display: block;
   width: 60%;
   height: 100%;
   background-color: #3498db;

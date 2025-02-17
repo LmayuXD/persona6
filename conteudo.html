@@ -228,19 +228,29 @@
     <!--JAVASCRIPT CONTEÚDO D/JOGO-->
     <script>
         const historia = {
-            ato1: {
-                text: "IS THAT THE GRIM REAPER??",
-                image: "imagens/joker.jpeg",
-                respostas: [
-                    {text: "Próximo", next: "ato2"}
-                ]
-            }, 
-            ato2 :{
-                text: "Junpei? More like Stupei.",
-                image: "imagens/makoto.jpeg",
-                repostas: []
-            }
-        };
+    ato1: {
+        text: "IS THAT THE GRIM REAPER??",
+        image: "imagens/pickmev2.png",
+        respostas: [
+            {text: "Próximo", next: "ato2"}
+        ]
+    }, 
+    ato2 :{
+        text: "Junpei? More like Stupei.",
+        image: "imagens/makoto.jpeg",
+        respostas: [
+            {text: "Próximo", next: "ato3"}
+        ]
+    }, 
+    ato3: {
+        text: "...As they say",
+        image: "imagens/joker.jpeg",
+        respostas: [
+            {text: "Próximo", next: "ato1"}
+        ]
+    }
+};
+
 
         function carregarCena(sceneKey) {
             const cena = historia[sceneKey];
@@ -251,15 +261,16 @@
             const respostasCon = document.getElementById("respostas");
             respostasCon.innerHTML = "";
 
-            cena.respostas.forEach(resposta => {
-                const button = document.createElement("button");
-
-                button.textContent = resposta.text;
-                button.classList.add("reposta-btn");
-                button.addEventListener("click", () => carregarCena(resposta.repostas));
-                respostasCon.appendChild(button);
-            });
-        }
+            if(cena.respostas) {
+                cena.respostas.forEach(resposta => {
+                    const button = document.createElement("button");
+                    button.textContent = resposta.text;
+                    button.classList.add("resposta-btn");
+                    button.addEventListener("click", () => carregarCena(resposta.next));
+                    respostasCon.appendChild(button);
+                });
+            }
+    }
 
         carregarCena("ato1");
     </script>
