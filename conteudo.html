@@ -93,7 +93,7 @@
             <img id="cena-do-personagem" src="joker.jpeg" alt="Era pra ter um personagem aqui">
         </div><!--IMAGEM PERSONAGEM-->
         <div id="dialogo">
-            <p id="texto-da-historia">GULE GULE BAH...</p>
+            <p id="texto-da-historia">IS THAT THE GRIM REAPER???...</p>
         </div><!--DIÁLOGO-->
         <button id="next-btn">Próximo</button>
         <div id="respostas"></div><!--RESPOSTAS-->
@@ -236,22 +236,6 @@
             }
         };
 
-        function carregarCena(cenaChave) {
-            const cena = historia[cenaChave];
-
-            document.getElementById("texto-da-historia").textContent = cena.Text;
-            document.getElementById("cena-do-personagem").src = cena.Image;
-
-            const proxCena = document.getElementById("next-btn");
-
-            cena.next.forEach(nexts => {
-                const button = document.createElement("button");
-                button.textContent = nexts.Text;
-                button.classList.add("next-button");
-                button.addEventListener("click", () => carregarCena(nexts));
-                proxCena.appendChild(button);
-            });
-        };
         carregarCena("ato1");
     </script>
 </body>
