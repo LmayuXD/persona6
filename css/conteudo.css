@@ -224,7 +224,7 @@ svg path {
   margin-left: 10px;
   margin-top: 10px;
 }
-#next-btn {
+.resposta-btn {
   font-family: "Roslindale Display Condensed";
   font-size: 25px;
   background: #e2e2dc;
@@ -238,7 +238,7 @@ svg path {
   transform: translate(330%, 530%);
   cursor: pointer;
 }
-#next-btn:hover {
+.resposta-btn:hover {
   background: #0a0a0a;
   color: #e2e2dc;
 }

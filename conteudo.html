@@ -95,7 +95,6 @@
         <div id="dialogo">
             <p id="texto-da-historia">IS THAT THE GRIM REAPER???...</p>
         </div><!--DIÁLOGO-->
-        <button id="next-btn">Próximo</button>
         <div id="respostas"></div><!--RESPOSTAS-->
     </div><!--CONTEÚDO-->
 
@@ -230,11 +229,35 @@
     <script>
         const historia = {
             ato1: {
-                Text: "IS THAT THE GRIM REAPER??",
-                Image: "joker.jpeg",
-                next: []
+                text: "IS THAT THE GRIM REAPER??",
+                image: "imagens/joker.jpeg",
+                respostas: "ato2"
+            }, 
+            ato2 :{
+                text: "Junpei? More like Stupei.",
+                image: "imagens/makoto.jpeg",
+                repostas: []
             }
         };
+
+        function carregarCena(sceneKey) {
+            const cena = historia[sceneKey];
+
+            document.getElementById("texto-da-historia").textContent = cena.text;
+            document.getElementById("cena-do-personagem").src = cena.image;
+
+            const respostasCon = document.getElementById("respostas");
+            respostasCon.innerHTML = "";
+
+            cena.respostas.forEach(resposta => {
+                const button = document.createElement("button");
+
+                button.textContent = resposta.text;
+                button.classList.add("reposta-btn");
+                button.addEventListener("click", () => carregarCena(resposta.repostas));
+                respostasCon.appendChild(button);
+            });
+        }
 
         carregarCena("ato1");
     </script>
