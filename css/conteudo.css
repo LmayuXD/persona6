@@ -225,6 +225,7 @@ svg path {
   margin-top: 10px;
 }
 #imagem-personagem {
+  background-image: url(imagens/);
   width: 30%;
   height: 80%;
   background: transparent ;
@@ -278,26 +279,26 @@ svg path {
   transform: scale(1.05);
 }
 #prox button {
+  font-family: "Roslindale Display Condensed";
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(340%, 420%);
   display: block;
-  width: 80%;
+  border: solid 3px #16164b;
+  width: 10%;
   margin: 10px auto;
   padding: 10px 15px;
-  border: none;
   background-color: #2980b9;
   color: white;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 5px;
+  font-size: 30px;
+  font-weight: 200;
+  border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
 }
 #prox button:hover {
   background-color: #1f6690;
-
 }
 /*PRÉ-LOAD || animação foi pega do "uiverse.io"*/
 .box-load {
