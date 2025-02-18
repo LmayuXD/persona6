@@ -96,6 +96,9 @@
             <p id="texto-da-historia">IS THAT THE GRIM REAPER???...</p>
         </div><!--DIÁLOGO-->
         <div id="respostas"></div><!--RESPOSTAS-->
+        <div id="prox">
+            <button id="botaoProx">Próximo</button>
+        </div><!--PROXIMO-->
     </div><!--CONTEÚDO-->
 
     <!--JAVASCRIPT-->
@@ -138,7 +141,7 @@
                 } else {
                     setTimeout(() => {
                         conteudo.style.display = "block";
-                    }, 1500); 
+                    }, 1500);
                 }
             };
         }
@@ -228,28 +231,25 @@
     <!--JAVASCRIPT CONTEÚDO D/JOGO-->
     <script>
         const historia = {
-    ato1: {
-        text: "IS THAT THE GRIM REAPER??",
-        image: "imagens/pickmev2.png",
-        respostas: [
-            {text: "Próximo", next: "ato2"}
-        ]
-    }, 
-    ato2 :{
-        text: "Junpei? More like Stupei.",
-        image: "imagens/makoto.jpeg",
-        respostas: [
-            {text: "Próximo", next: "ato3"}
-        ]
-    }, 
-    ato3: {
-        text: "...As they say",
-        image: "imagens/joker.jpeg",
-        respostas: [
-            {text: "Próximo", next: "ato1"}
-        ]
-    }
-};
+            ato1: {
+                text: "IS THAT THE GRIM REAPER??",
+                image: "imagens/pickmev2.png",
+                respostas: null,
+                next: "ato2"
+            },
+            ato2: {
+                text: "Junpei? More like Stupei.",
+                image: "imagens/makoto.jpeg",
+                respostas: [{ text: "Próximo", next: "ato3" }],
+                mostrarRespostas: true
+            },
+            ato3: {
+                text: "...As they say",
+                image: "imagens/joker.jpeg",
+                respostas:null,
+                next: "ato1"
+            }
+        };
 
 
         function carregarCena(sceneKey) {
@@ -260,17 +260,28 @@
 
             const respostasCon = document.getElementById("respostas");
             respostasCon.innerHTML = "";
+            respostasCon.classList.remove("mostrar");
 
-            if(cena.respostas) {
-                cena.respostas.forEach(resposta => {
+            if(cena.mostrarRespostas) {
+                document.getElementById("botaoProx").onclick = () => mostrarRespostas(cena.respostas);
+            } else {
+                document.getElementById("botaoProx").onclick = () => carregarCena(cena.next);
+            }
+        }
+
+            function mostrarRespostas(respostas) {
+                const respostasCon = document.getElementById("respostas");
+                respostasCon.innerHTML = "";
+
+                respostas.forEach(resposta => {
                     const button = document.createElement("button");
                     button.textContent = resposta.text;
                     button.classList.add("resposta-btn");
                     button.addEventListener("click", () => carregarCena(resposta.next));
                     respostasCon.appendChild(button);
                 });
+                respostasCon.classList.add("mostrar");
             }
-    }
 
         carregarCena("ato1");
     </script>
