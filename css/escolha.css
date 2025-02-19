@@ -1,0 +1,75 @@
+/*GERAL*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+html, body {
+    background: #5b1a1a;
+    width: 100vw;
+    height: 100vh;
+}
+/*CONTEÚDO*/
+#escolhas {
+    background: black;
+    height: 80%;
+    width: 80%;
+    position: relative;
+    margin: auto;
+    top: 10%;
+}
+.ash, .heather, .lili, .nathaniel, .levi {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: blue;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.ash {
+    transform: translate(-250%, -50%);
+    background-image: url(imagens/enzo.png);
+    background-size: cover;
+    background-position: center;
+}
+.ash:hover {
+    background: red;
+}
+.heather {
+    transform: translate(-200%, -50%);
+    background-image: url(imagens/pickme.png);
+    background-position: center;
+    background-size: cover;
+}
+.heather:hover {
+    background: red;
+}
+.lili {
+    transform: translate(-150%, -50%);
+    background-image: url(imagens/cacheada.png);
+    background-size: cover;
+    background-position: center;
+}
+.lili:hover {
+    background: red;
+}
+.nathaniel {
+    transform: translate(-100%, -50%);
+    background-image: url(imagens/loiro.png);
+    background-size: cover;
+    background-position: center;
+}
+.nathaniel:hover {
+    background: red;
+}
+.levi {
+    transform: translate(-50%, -50%);
+    background-image: url(imagens/ruivo.png);
+    background-position: center;
+    background-size: cover;
+}
+.levi:hover {
+    background: red;
+}
