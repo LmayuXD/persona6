@@ -207,6 +207,7 @@ svg path {
   display: none;
 }
 #dialogo {
+  color: #fff;
   border: solid 3px #16164b;
   border-radius: 10px;
   background-color: #400fa225;
@@ -221,7 +222,7 @@ svg path {
 #texto-da-historia {
   font-size: 35px;
   position: relative;
-  margin-left: 10px;
+  margin-left: 15px;
   margin-top: 10px;
 }
 #imagem-personagem {
