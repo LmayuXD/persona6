@@ -231,23 +231,74 @@
     <!--JAVASCRIPT CONTEÚDO D/JOGO-->
     <script>
         const historia = {
-            ato1: {
+            pergunta01: {
                 text: "IS THAT THE GRIM REAPER??",
-                image: "imagens/pickmev2.png",
-                respostas: null,
-                next: "ato2"
+                image: "imagens/enzov2.png",
+                respostas: [
+                    { text: "Você, como chefe do jornal, não tinha conhecimento sobre “Voice”?", next: "respostaAsh01" },
+                    { text: "Você tem um estilo de escrita bastante único, “Voice” tem uma escrita muito similar a sua, o que você acha sobre isso?", next: "respostaAsh02" },
+                    { text: "Qual você acredita ser a motivação de “Voice”?", next: "respostaAsh03" }],
+                mostrarRespostas: true
             },
-            ato2: {
-                text: "Junpei? More like Stupei.",
+            respostaAsh01: {
+                text: " Claro que eu sei sobre “Voice”. Todas as edições do jornal passam pelas minhas mãos, porém, essa coluna em particular nunca está presente na edição final. Eu não tenho ideia como ela acaba na publicação.",
                 image: "imagens/makoto.jpeg",
-                respostas: [{ text: "fim", next: "ato3" },  {text: "volta", next: "ato1" }],
+                respostas: null,
+                next: "ato3"
+            },
+            respostaAsh02: {
+                text: "Se é alguém do jornal, todos conhecem minha escrita. Não é difícil de copiar, além disso, eu não seria burro o suficiente para escrever com meu próprio estilo de escrita.",
+                image: "imagens/joker.jpeg",
+                respostas: null,
+                next: "ato3"
+            },
+            respostaAsh03: {
+                text: "Precisa de uma grande motivação? Quem não gosta de fofoca? Mas esse “Voice” errou ao tentar destruir o meu jornal. Acredite Raven, se eu descobrir quem está fazendo isso, ele vai querer ter sido pego por você.",
+                image: "imagens/makoto.jpeg",
+                respostas: null,
+                next: "ato3"
+            },
+            pergunta02: {
+                text: "...",
+                image: "imagens/pickmev2.jpeg",
+                respostas: [
+                    { text: "Você é editora do jornal, correto? Uma de suas funções é escolher o que vai ou não para a pauta, pode me explicar como essa coluna acabou na primeira página do jornal?", next: "respostaLili01" },
+                    { text: "Eu sei que sua entrada na equipe do jornal é recente, você pode me dizer sua impressão sobre todos os integrantes?", next: "respostaLili02" },
+                    { text: "Qual você acredita ser a motivação de “Voice”?", next: "respostaLili03" }],
+                mostrarRespostas: true
+            },
+            respostaLili01: {
+                text: "Sim, eu sou uma das editoras. Quando eu reviso, não tem nada além do que foi decidido. Mas, como eu disse, eu não sou a única editora.",
+                image: "imagens/makoto.jpeg",
+                respostas: null,
+                next: "ato3"
+            },
+            respostaLili02: {
+                text: "Não tenho problema com nenhum dos meninos, eles têm sido bem legais comigo. Porém, a Heather é meio esquisita. Ela fica muito quieta, o Nati até tenta falar com ela, mas sei lá.",
+                image: "imagens/joker.jpeg",
+                respostas: null,
+                next: "ato3"
+            },
+            respostaLili03: {
+                text: "Acho que deve ser alguém desesperado por atenção, sabe? Provavelmente algum esquisitão com inveja do sucesso do nosso jornal.",
+                image: "imagens/makoto.jpeg",
+                respostas: null,
+                next: "ato3"
+            },
+            pergunta03: {
+                text: "...",
+                image: "imagens/loiro.png",
+                respostas: [
+                    { text: "Você é o fotógrafo, certo? Eu sempre achei interessante um esportista se interessar por uma atividade tão passiva quanto fazer parte do jornal da escola. O que te fez querer entrar?", next: "respostaNathaniel01" },
+                    { text: "Eu sei que sua entrada na equipe do jornal é recente, você pode me dizer sua impressão sobre todos os integrantes?", next: "respostaLili02" },
+                    { text: "Qual você acredita ser a motivação de “Voice”?", next: "respostaLili03" }],
                 mostrarRespostas: true
             },
             ato3: {
                 text: "...As they say",
                 image: "imagens/joker.jpeg",
                 respostas: null,
-                next: "ato1"
+                next: "pergunta01"
             }
         };
 
@@ -262,28 +313,28 @@
             respostasCon.innerHTML = "";
             respostasCon.classList.remove("mostrar");
 
-            if(cena.mostrarRespostas) {
+            if (cena.mostrarRespostas) {
                 document.getElementById("botaoProx").onclick = () => mostrarRespostas(cena.respostas);
             } else {
                 document.getElementById("botaoProx").onclick = () => carregarCena(cena.next);
             }
         }
 
-            function mostrarRespostas(respostas) {
-                const respostasCon = document.getElementById("respostas");
-                respostasCon.innerHTML = "";
+        function mostrarRespostas(respostas) {
+            const respostasCon = document.getElementById("respostas");
+            respostasCon.innerHTML = "";
 
-                respostas.forEach(resposta => {
-                    const button = document.createElement("button");
-                    button.textContent = resposta.text;
-                    button.classList.add("resposta-btn");
-                    button.addEventListener("click", () => carregarCena(resposta.next));
-                    respostasCon.appendChild(button);
-                });
-                respostasCon.classList.add("mostrar");
-            }
+            respostas.forEach(resposta => {
+                const button = document.createElement("button");
+                button.textContent = resposta.text;
+                button.classList.add("resposta-btn");
+                button.addEventListener("click", () => carregarCena(resposta.next));
+                respostasCon.appendChild(button);
+            });
+            respostasCon.classList.add("mostrar");
+        }
 
-        carregarCena("ato1");
+        carregarCena("pergunta01");
     </script>
 </body>
 

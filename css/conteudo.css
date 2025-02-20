@@ -226,15 +226,15 @@ svg path {
 }
 #imagem-personagem {
   width: 30%;
-  height: 80%;
+  height: 83%;
   background: transparent ;
-  border: solid 1px red;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-180%, -40%);
 }
 #cena-do-personagem {
+  position: relative;
   width: 140%;
   height: 100%;
   object-fit: contain;
@@ -259,8 +259,12 @@ svg path {
   opacity: 1;
 }
 #respostas button {
+  position: relative;
+  top: 77%;
+  right: 15%;
   display: block;
-  width: 80%;
+  width: 50%;
+  height: 6%;
   margin: 10px auto;
   padding: 10px 15px;
   border: none;
