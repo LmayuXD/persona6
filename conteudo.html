@@ -290,7 +290,7 @@
                 image: "imagens/loiro.png",
                 respostas: [
                     { text: "Você é o fotógrafo, certo? Eu sempre achei interessante um esportista se interessar por uma atividade tão passiva quanto fazer parte do jornal da escola. O que te fez querer entrar?", next: "respostaNathaniel01" },
-                    { text: "Eu sei que sua entrada na equipe do jornal é recente, você pode me dizer sua impressão sobre todos os integrantes?", next: "respostaNathaniel02" },
+                    { text: "Eu ouvi dizer que você é bem próximo de uma das editoras, a Lili. Qual sua relação com ela?", next: "respostaNathaniel02" },
                     { text: "Qual você acredita ser a motivação de “Voice”?", next: "respostaNathaniel03" }],
                 mostrarRespostas: true
             },
@@ -301,16 +301,16 @@
                 next: "pergunta04"
             },
             respostaNathaniel02: {
-                text: "Eu ouvi dizer que você é bem próximo de uma das editoras, a Lili. Qual sua relação com ela?",
+                text: "*Nathaniel faz uma expressão irritada e sua voz soa defensiva* O que você quer dizer com isso?! Andam falando que eu estou saindo com a Lili?! A Heather ouviu sobre isso?!",
                 image: "imagens/loiro.png",
                 respostas: null,
-                next: "pergunta04"
+                next: "respostaNathaniel03"
             },
             respostaNathaniel03: {
                 text: "*Ele parece perceber a sua reação e fica envergonhado. Ele tropeça nas palavras antes de conseguir responder* Eu e Lili somos só colegas, ela me pergunta coisas sobre as fotos e é só.",
                 image: "imagens/loiro.png",
                 respostas: null,
-                next: "respostaNathaniel04"
+                next: "pergunta04"
             },
             respostaNathaniel04: {
                 text: "Eu não sei dizer. Talvez seja só alguém revoltado com o jeito que as coisas são.",
