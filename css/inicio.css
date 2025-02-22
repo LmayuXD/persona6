@@ -12,6 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     background: #000;
+    transition: opacity 1.5s ease-in;
 }
 
 /*BACKGROUND*/
@@ -25,11 +26,6 @@ body {
 }
 
 /*CONTEÚDO*/
-.gradiente {
-    background-color: #f00000;
-    width: 200px;
-    height: 100vh;
-}
 .topo {
     background-color: transparent;
     border-radius: 20px;
@@ -55,9 +51,9 @@ body {
     font-weight: 300;
     transform: perspective(500px) rotateY(20deg);
 }
-
-
-
+.fade-out {
+    opacity: 0;
+}
 /*BOTÕES*/
 input {
     position: relative;

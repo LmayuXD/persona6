@@ -10,7 +10,15 @@ document.addEventListener("mousemove", (event) => {
     background.style.transform = `translate(${x}px, ${y}px)`;
 });
 
+//TRANSIÇÃO P/MUDAR DE PÁGINA
+function carregarJogo() {
+    document.body.classList.add("fade-out");
+    setTimeout(() => {
+        window.location.href = "conteudo.html";
+    }, 1500);
+}
+
 //SAIR DO JOGO
 function sair() {
-    window.close();
+  window.close();
 }

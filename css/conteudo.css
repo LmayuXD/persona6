@@ -12,12 +12,21 @@
 html, body {
     width: 100vw;
     height: 100vh;
+    background-color: #000;
     background: url(imagens/fundo_corredorV3.jpeg);
     background-size: cover;
     background-position: center;
     /*font-family: "Italiana", serif;*/
     font-family: "Roslindale Display Condensed";
     overflow: hidden;
+    
+}
+body {
+  opacity: 0;
+  transition: opacity 1.5s ease-out;
+}
+.loaded{
+  opacity: 1;
 }
 /*MENU*/
 h1.hero-title {
