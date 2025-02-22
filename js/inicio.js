@@ -18,6 +18,12 @@ function carregarJogo() {
     }, 1500);
 }
 
+function carregarCreditos(){
+    document.body.classList.add("fade-out");
+    setTimeout(() => {
+        window.location.href = "creditos.html";
+    }, 1500);
+}
 //SAIR DO JOGO
 function sair() {
   window.close();
