@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Italiana&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 /*GERAL*/
 * {
     margin: 0;
@@ -47,7 +48,8 @@ body {
     position: relative;
     text-shadow: 10px 5px 8px black;
     top: 30px;
-    font-family: "Roslindale Display Condensed";
+    font-family: "Italiana", serif;
+    /*font-family: "Roslindale Display Condensed";*/
     font-weight: 300;
     transform: perspective(500px) rotateY(20deg);
 }
@@ -65,7 +67,8 @@ input {
     border-radius: 5px;
     border: none;
     font-size: 50px;
-    font-family: "Roslindale Display Condensed";
+    font-family: "Italiana", serif;
+    /*font-family: "Roslindale Display Condensed";*/
     cursor: pointer;
     transition: 0.3s ease-in-out;
     transform: perspective(500px) rotateY(30deg);

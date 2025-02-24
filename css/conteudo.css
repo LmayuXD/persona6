@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Italiana&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 /*GERAL*/
 * {
     margin: 0;
@@ -16,8 +17,8 @@ html, body {
     background: url(imagens/fundo_corredorV3.jpeg);
     background-size: cover;
     background-position: center;
-    /*font-family: "Italiana", serif;*/
-    font-family: "Roslindale Display Condensed";
+    font-family: "Italiana", serif;
+    /*font-family: "Roslindale Display Condensed";*/
     overflow: hidden;
     
 }

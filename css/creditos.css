@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Italiana&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 /*GERAL*/
 body {
     margin: 0;
@@ -9,6 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family: "Italiana", serif;
 }
 
 /*CREDITOS*/
