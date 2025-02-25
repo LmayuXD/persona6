@@ -1,34 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Italiana&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 /*GERAL*/
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
+
 :root {
   --bg: #e5e3dc;
   --link-color: #e2e2dc;
   --overlay-bg: #0a0a0a;
 }
-html, body {
-    width: 100vw;
-    height: 100vh;
-    background-color: #000;
-    background: url(imagens/fundo_corredorV3.jpeg);
-    background-size: cover;
-    background-position: center;
-    font-family: "Italiana", serif;
-    /*font-family: "Roslindale Display Condensed";*/
-    overflow: hidden;
-    
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  background: url(imagens/fundo_corredorV3.jpeg);
+  background-size: cover;
+  background-position: center;
+  font-family: "Italiana", serif;
+  /*font-family: "Roslindale Display Condensed";*/
+  overflow: hidden;
+
 }
+
 body {
   opacity: 0;
   transition: opacity 1.5s ease-out;
 }
-.loaded{
+
+.loaded {
   opacity: 1;
 }
+
 /*MENU*/
 h1.hero-title {
   position: absolute;
@@ -42,6 +49,7 @@ h1.hero-title {
   font-weight: 400;
   z-index: 0;
 }
+
 .sobrepor {
   position: absolute;
   width: 100vw;
@@ -50,9 +58,11 @@ h1.hero-title {
   left: 0;
   z-index: 0;
 }
+
 svg path {
   fill: var(--overlay-bg);
 }
+
 #altera-btn {
   position: absolute;
   top: 0;
@@ -66,29 +76,34 @@ svg path {
   z-index: 2;
   cursor: pointer;
 }
+
 .btn-outline {
   position: absolute;
   width: 100px;
   height: 100px;
   border: 1px solid var(--overlay-bg);
 }
+
 .btn-outline-1 {
-  border-radius: 60% 40% 30% 70% / 60% 30%  70% 40%;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   animation: morph 4s linear infinite;
 }
+
 .btn-outline-2 {
   border-radius: 53% 47% 43% 57% / 51% 39% 61% 49%;
 }
 
 @keyframes morph {
   0% {
-    border-radius: 60% 40% 30% 70% / 60% 30%  70% 40%;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
+
   50% {
     border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
   }
+
   100% {
-    border-radius: 60% 40% 30% 70% / 60% 30%  70% 40%;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
 }
 
@@ -98,6 +113,7 @@ svg path {
   height: 20px;
   z-index: 2;
 }
+
 #hamburger span {
   position: absolute;
   top: 50%;
@@ -108,6 +124,7 @@ svg path {
   background: var(--overlay-bg);
   transition: transform 0.25s;
 }
+
 #hamburger span::before {
   position: absolute;
   right: 0;
@@ -119,9 +136,11 @@ svg path {
   transform: translateY(-4px);
   transition: transform 0.25s;
 }
+
 #hamburger .active span {
   transform: rotate(45deg);
 }
+
 #hamburger .active span::before {
   top: unset;
   width: 24px;
@@ -135,10 +154,12 @@ svg path {
   height: 100vh;
   display: flex;
 }
-.menu > div {
+
+.menu>div {
   height: 100%;
   display: flex;
 }
+
 .menu a {
   position: relative;
   top: 120px;
@@ -146,14 +167,17 @@ svg path {
   text-decoration: none;
   color: var(--link-color);
 }
+
 .menu a span {
   font-size: 20px;
   margin-right: 2em;
   font-family: "Ayer";
 }
+
 .menu-item {
   position: relative;
 }
+
 .menu-item::after {
   content: "";
   position: absolute;
@@ -164,6 +188,7 @@ svg path {
   background: var(--overlay-bg);
   margin: 0 auto;
 }
+
 .menu-conteiner {
   width: 70%;
   height: 50%;
@@ -171,6 +196,7 @@ svg path {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .primeiro-menu {
   flex: 3;
   display: flex;
@@ -178,6 +204,7 @@ svg path {
   justify-content: center;
   align-items: center;
 }
+
 .primeiro-menu .menu-conteiner .wrapper {
   width: 100%;
   height: 100%;
@@ -185,6 +212,7 @@ svg path {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .primeiro-menu a {
   text-transform: uppercase;
   font-size: 125px;
@@ -199,10 +227,12 @@ svg path {
   align-items: center;
   gap: 8em;
 }
+
 .segundo-menu .menu-item a {
   font-family: "Ayer";
   font-size: 36px;
 }
+
 .segundo-menu .menu-conteiner .wrapper:nth-child(1) {
   display: flex;
   flex-direction: column;
@@ -218,10 +248,11 @@ svg path {
 .conteudo {
   display: none;
 }
+
 #dialogo {
   color: #fff;
   text-shadow: 3px 3px #000;
-  -webkit-text-stroke-width: 1px; 
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #e2e2e2;
   border: solid 3px #16164b;
   border-radius: 10px;
@@ -234,28 +265,32 @@ svg path {
   top: 50%;
   transform: translate(-50%, 100%);
 }
+
 #texto-da-historia {
   font-size: 35px;
   position: relative;
   margin-left: 15px;
   margin-top: 10px;
 }
+
 #imagem-personagem {
   width: 30%;
   height: 83%;
-  background: transparent ;
+  background: transparent;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-180%, -40%);
   transition: 0.5s ease-in-out;
 }
+
 #cena-do-personagem {
   position: relative;
   width: 140%;
   height: 100%;
   object-fit: contain;
 }
+
 #respostas {
   /*IMAGEM DO PROTA*/
   background-image: url(imagens/protav2.png);
@@ -275,11 +310,13 @@ svg path {
   opacity: 0;
   transition: transform 0.5s ease-out, opacity 0.5s ease-out;
 }
+
 #respostas.mostrar {
   display: block;
   transform: translate(20%, -50%) scale(1);
   opacity: 1;
 }
+
 #respostas button {
   position: relative;
   top: 67%;
@@ -303,6 +340,7 @@ svg path {
   background-color: #1f6690;
   transform: scale(1.05);
 }
+
 #prox button {
   font-family: "Roslindale Display Condensed";
   position: absolute;
@@ -322,99 +360,117 @@ svg path {
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
 }
+
 #prox button:hover {
   background-color: #1f6690;
 }
+
 /*PRÉ-LOAD || animação foi pega do "uiverse.io"*/
 .box-load {
-    width: 200px;
-    height: 60px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
+  width: 200px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #fff;
+  left: 15%;
+  transform-origin: 50%;
+  animation: circle7124 .5s alternate infinite ease;
+}
+
+@keyframes circle7124 {
+  0% {
+    top: 60px;
+    height: 5px;
+    border-radius: 50px 50px 25px 25px;
+    transform: scaleX(1.7);
   }
-  
-  .circle {
-    width: 20px;
+
+  40% {
     height: 20px;
-    position: absolute;
     border-radius: 50%;
-    background-color: #fff;
-    left: 15%;
-    transform-origin: 50%;
-    animation: circle7124 .5s alternate infinite ease;
+    transform: scaleX(1);
   }
-  
-  @keyframes circle7124 {
-    0% {
-      top: 60px;
-      height: 5px;
-      border-radius: 50px 50px 25px 25px;
-      transform: scaleX(1.7);
-    }
-  
-    40% {
-      height: 20px;
-      border-radius: 50%;
-      transform: scaleX(1);
-    }
-  
-    100% {
-      top: 0%;
-    }
+
+  100% {
+    top: 0%;
   }
-  
-  .circle:nth-child(2) {
-    left: 45%;
-    animation-delay: .2s;
+}
+
+.circle:nth-child(2) {
+  left: 45%;
+  animation-delay: .2s;
+}
+
+.circle:nth-child(3) {
+  left: auto;
+  right: 15%;
+  animation-delay: .3s;
+}
+
+.shadow {
+  width: 20px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 62px;
+  transform-origin: 50%;
+  z-index: -1;
+  left: 15%;
+  filter: blur(1px);
+  animation: shadow046 .5s alternate infinite ease;
+}
+
+@keyframes shadow046 {
+  0% {
+    transform: scaleX(1.5);
   }
-  
-  .circle:nth-child(3) {
-    left: auto;
-    right: 15%;
-    animation-delay: .3s;
+
+  40% {
+    transform: scaleX(1);
+    opacity: .7;
   }
-  
-  .shadow {
-    width: 20px;
-    height: 4px;
-    border-radius: 50%;
-    background-color: rgba(0,0,0,0.9);
-    position: absolute;
-    top: 62px;
-    transform-origin: 50%;
-    z-index: -1;
-    left: 15%;
-    filter: blur(1px);
-    animation: shadow046 .5s alternate infinite ease;
+
+  100% {
+    transform: scaleX(.2);
+    opacity: .4;
   }
+}
+
+.shadow:nth-child(4) {
+  left: 45%;
+  animation-delay: .2s
+}
+
+.shadow:nth-child(5) {
+  left: auto;
+  right: 15%;
+  animation-delay: .3s;
+}
+
+/*RESPONSIVIDADE*/
+
+/*COMPUTADOR*/
+@media (min-width: 1024px) {
+
+}
+
+/*TABLET*/
+@media (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+/*CELULAR*/
+@media (max-width: 767px) {
   
-  @keyframes shadow046 {
-    0% {
-      transform: scaleX(1.5);
-    }
-  
-    40% {
-      transform: scaleX(1);
-      opacity: .7;
-    }
-  
-    100% {
-      transform: scaleX(.2);
-      opacity: .4;
-    }
-  }
-  
-  .shadow:nth-child(4) {
-    left: 45%;
-    animation-delay: .2s
-  }
-  
-  .shadow:nth-child(5) {
-    left: auto;
-    right: 15%;
-    animation-delay: .3s;
-  }
-  
+}

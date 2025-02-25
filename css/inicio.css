@@ -80,3 +80,17 @@ input:hover {
     border: solid 1px white;
     transform: perspective(500px) rotateY(20deg);
 }
+/*RESPONSIVIDADE*/
+
+/*COMPUTADOR*/
+@media (min-width: 1024px) {
+
+}
+/*TABLET*/
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+}
+/*CELULAR*/
+@media (max-width: 767px) {
+    
+}
