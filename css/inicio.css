@@ -22,6 +22,7 @@ body {
     width: 120%;
     height: 120%;
     background: url(imagens/tela_inicial_gradiente.png) no-repeat center center;
+    background-position: center;
     background-size: cover;
     transition: transform 0.1s ease-out;
 }
@@ -40,6 +41,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-75%, -50%);
+    transition: all 0.3s ease-in-out;
 }
 
 .titulo {
@@ -52,6 +54,7 @@ body {
     /*font-family: "Roslindale Display Condensed";*/
     font-weight: 300;
     transform: perspective(500px) rotateY(20deg);
+    transition: all 0.3s ease-in-out;
 }
 .fade-out {
     opacity: 0;
@@ -83,14 +86,44 @@ input:hover {
 /*RESPONSIVIDADE*/
 
 /*COMPUTADOR*/
-@media (min-width: 1024px) {
-
+@media (min-width: 1024px) and (max-width: 1500px){
+    .topo {
+        transform: translate(-45%, -50%);
+    }
+    .titulo {
+        font-size: 90px;
+        transform: perspective(600px) rotateY(20deg);
+    }
+    input {
+        width: 450px;
+        transform: perspective(600px) rotateY(30deg);
+    }
+    input:hover {
+        transform: perspective(600px) rotateY(20deg);
+    }
 }
 /*TABLET*/
-@media (min-width: 768px) and (max-width: 1023px) {
-    
+@media (min-width: 768px) and (max-width: 1024px) {
+    .topo {
+        transform: translate(-40%, -50%);
+    }
+    .titulo {
+        font-size: 80px;
+    }
+    input {
+        width: 400px;
+    }
 }
 /*CELULAR*/
-@media (max-width: 767px) {
-    
+@media (max-width: 768px) {
+    .topo {
+        transform: translate(-43%, -50%);
+    }
+    .titulo {
+        font-size: 70px;
+    }
+    input {
+        width: 400px;
+        right: 200px;
+    }
 }
