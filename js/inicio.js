@@ -14,7 +14,7 @@ document.addEventListener("mousemove", (event) => {
 function carregarJogo() {
     document.body.classList.add("fade-out");
     setTimeout(() => {
-        window.location.href = "conteudo.html";
+        window.location.href = "pag2.html";
     }, 1500);
 }
 

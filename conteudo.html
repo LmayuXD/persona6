@@ -383,10 +383,9 @@
                 text: "...As they say",
                 image: "imagens/joker.jpeg",
                 respostas: null,
-                next: "pergunta01"
+                next: "select.html"
             }
         };
-
 
         function carregarCena(sceneKey) {
             const cena = historia[sceneKey];
@@ -398,11 +397,15 @@
             respostasCon.innerHTML = "";
             respostasCon.classList.remove("mostrar");
 
-            if (cena.mostrarRespostas) {
-                document.getElementById("botaoProx").onclick = () => mostrarRespostas(cena.respostas);
-            } else {
-                document.getElementById("botaoProx").onclick = () => carregarCena(cena.next);
-            }
+            if (cena.next === "select.html") {
+        window.location.href = "select.html";  // Redireciona para a página select.html
+    } else if (cena.mostrarRespostas) {
+        // Se houver respostas, mostra-as
+        document.getElementById("botaoProx").onclick = () => mostrarRespostas(cena.respostas);
+    } else {
+        // Caso contrário, carrega a próxima cena
+        document.getElementById("botaoProx").onclick = () => carregarCena(cena.next);
+    }
         }
 
         function mostrarRespostas(respostas) {
