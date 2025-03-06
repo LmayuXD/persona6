@@ -487,9 +487,9 @@ a:hover {
   .p{
     background-color: #c91e1e8e;
     margin-top: 580px;
-    width: 330px;
-    height: 102px;
-    font-size: 17px;
+    width: 270px;
+    height: 110px;
+    font-size: 15px;
   }
   
   .d{
@@ -500,7 +500,7 @@ a:hover {
     font-size: 20px;
     width: 24px;
     height: 11px;
-    margin-left: 250px;
+    margin-left: 210px;
   }
   
   a:hover{
