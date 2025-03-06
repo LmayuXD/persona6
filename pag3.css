@@ -463,8 +463,8 @@ a:hover {
 @media screen and (max-width: 540px){
   
   body{
-    height: 848px;
-    width: 375px;
+    height: 858px;
+    width: 320px;
   }
 
   .p{
@@ -476,7 +476,7 @@ a:hover {
   }
   
   .d{
-    height: 710px;
+    height: 540px;
   }
 
   a{
