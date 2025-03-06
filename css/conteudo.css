@@ -592,7 +592,7 @@ svg path {
     margin-top: 10px;
   }
   #prox button {
-    transform: translate(-50%, 390%);
+    transform: translate(-50%, 300%);
     width: 110%;
     font-size: 30px;
   }
