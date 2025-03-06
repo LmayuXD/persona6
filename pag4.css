@@ -464,27 +464,27 @@ a:hover {
 @media screen and (max-width: 540px){
   
   body{
-    height: 848px;
-    width: 375px;
+    height: 858px;
+    width: 320px;
   }
 
   .p{
-    background-color: #c91e1e8e;
-    margin-top: 798px;
+    background-color: #4f37908e;
+    margin-top: 560px;
     width: 330px;
-    height: 102px;
-    font-size: 17px;
+    height: 110px;
+    font-size: 16px;
   }
   
   .d{
-    height: 860px;
+    height: 530px;
   }
 
   a{
     font-size: 20px;
     width: 24px;
     height: 11px;
-    margin-left: 380px;
+    margin-left: 250px;
   }
   
   a:hover{
