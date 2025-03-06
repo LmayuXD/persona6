@@ -607,11 +607,11 @@ svg path {
     transform: translate(-50%, -50%);
   }
   #respostas button {
-    top: 65%;
+    top: 60%;
     right: 0;
     width: 100%;
     max-height: 50%;
-    font-size: 20px;
+    font-size: 15px;
   }
   /*MENU*/
   .primeiro-menu {
