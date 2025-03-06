@@ -121,6 +121,7 @@ input:hover {
     }
     .titulo {
         font-size: 45px;
+        left: 10px;
     }
     input {
         width: 200px;
