@@ -592,9 +592,9 @@ svg path {
     margin-top: 10px;
   }
   #prox button {
-    transform: translate(-50%, 320%);
+    transform: translate(-50%, 390%);
     width: 110%;
-    font-size: 40px;
+    font-size: 30px;
   }
   /*PARTE DO PROTAGONISTA*/
   #respostas {
