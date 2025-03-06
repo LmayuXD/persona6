@@ -117,13 +117,13 @@ input:hover {
 /*CELULAR*/
 @media (max-width: 768px) {
     .topo {
-        transform: translate(-43%, -50%);
+        transform: translate(-50%, -50%);
     }
     .titulo {
-        font-size: 70px;
+        font-size: 45px;
     }
     input {
-        width: 400px;
-        right: 200px;
+        width: 200px;
+        right: 100px;
     }
 }
