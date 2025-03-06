@@ -466,6 +466,9 @@ svg path {
 
 /*COMPUTADOR*/
 @media (min-width: 1024px) and (max-width: 1920px) {
+  body {
+    overflow: hidden;
+  }
   /*GERAL*/
   #imagem-personagem {
     width: 16%;
@@ -495,6 +498,9 @@ svg path {
 /*TABLET*/
 @media (min-width: 768px) and (max-width: 1024px) {
   /*GERAL*/
+  body {
+    overflow: hidden;
+  }
   #imagem-personagem {
     width: 30%;
     height: 200%;
@@ -563,6 +569,9 @@ svg path {
 /*CELULAR*/
 @media (max-width: 768px) {
   /*GERAL*/
+  body {
+    overflow: hidden;
+  }
   #imagem-personagem {
     width: 40%;
     height: 200%;
