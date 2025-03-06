@@ -120,6 +120,7 @@ input:hover {
         transform: translate(-45%, -50%);
     }
     .titulo {
+        right: 20px;
         font-size: 40px;
     }
     input {
