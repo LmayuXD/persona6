@@ -421,25 +421,37 @@ body{
   
   @media screen and (max-width: 540px){
   
+    body {
+      overflow: hidden;
+      height: 858px;
+      width: 320px;
+    }
   
     .p{
       background-color: #4f37908e;
-      margin-top: 755px;
-      width: 430px;
-      height: 99px;
-      font-size: 18px;
+      margin-top: 560px;
+      width: 330px;
+      height: 135px;
+      font-size: 16px;
     }
-  
+    
     .d{
-      height: 880px;
+      height: 530px;
     }
   
     a{
-      font-size: 26px;
+      font-size: 20px;
+      width: 24px;
+      height: 11px;
+      margin-left: 250px;
+    }
+    
+    a:hover{
+      font-size: 24px;
       width: 28px;
       height: 11px;
-      margin-left: 360px;
     }
-  
+    
+    
   }
   
