@@ -1,7 +1,7 @@
 /*RESPONSIVIDADE*/
 @import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Italiana&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 540px){
   body {
     background-image: url(culpado.jpg);
    
@@ -45,9 +45,8 @@
      }
 
     .button6 img{
-        margin-left: -145px;
-        margin-top: 70px;
-       
+        margin-left: -110px;
+        margin-top: 40px;
         background-color: #4400ff00;
         color: #ffffff; 
         font-family: "Italiana", serif;
@@ -70,8 +69,8 @@
     }
     .button7 {
     
-      margin-left: 6%;
-      margin-top: 770px;
+      margin-left: 5%;
+      margin-top: 700px;
       backdrop-filter: blur(10px);
       background-color: #4400ffad;
       color: #ffffff; 
@@ -83,10 +82,10 @@
       gap: 0.5rem;
       padding: 0.5rem 1rem;
       border-radius: 9px;
-      width: 245px;
-      height: 60px;
+      width: 150px;
+      height: 50px;
       cursor: pointer;
-      font-size: 25px;
+      font-size: 20px;
       font-weight: normal;
       border: 1px solid #300068;
       

@@ -65,7 +65,7 @@ a:hover {
   height: 100%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px){
   .p {
     width: 80%;
     margin-top: 60vh;
@@ -74,7 +74,7 @@ a:hover {
 
   .p:hover {
     background-color: #6a006a; 
-
+  }
   a {
     font-size: 6vw;
   }
