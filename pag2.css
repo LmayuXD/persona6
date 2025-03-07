@@ -1,89 +1,109 @@
 @import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Italiana&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-body{
-    background-image: url(fundo1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-  }
+body {
+  background-image: url(fundo1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
 
-
-.p{
-  margin-left: 0px;
-  margin-top: 790px;
-  backdrop-filter: blur(10px);
-  background-color: #4f37908e;
+.p {
+  background-color: #800080; 
   color: #ffffff; 
   font-family: "Italiana", serif;
   text-decoration: none;
-  display: inline-flex;
-  position: absolute;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  position: absolute;
   gap: 0.5rem;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   border-radius: 9px;
-  width: 920px;
-  height: 125px;
-  font-size: 30px;
+  width: 90%;
+  max-width: 920px;
+  font-size: 2vw;
   font-weight: normal;
-  border: 1px solid #300068;
-   
+  border: none; 
+  margin-top: 75vh;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer; 
+  text-align: center; 
 }
 
-a{
+.p:hover {
+  background-color: #6a006a; 
+  transition: background-color 0.3s ease; 
+}
+
+a {
   color: #ffffff;
-  font-size: 40px;
-   background-color:  rgba(9, 0, 26, 0.788);
-   margin-bottom: 0px;
-   margin-left: 1740px;
-   font-family: "Italiana", serif;
-   text-decoration: none;
-   width: 50px;
-   height: 30px;
-   border-radius: 2px;
-   cursor: pointer;
-}
-
-
-a:hover {
-  font-size: 45px;
+  font-size: 5vw;
+  background-color: rgba(9, 0, 26, 0.788);
+  font-family: "Italiana", serif;
+  text-decoration: none;
+  width: auto;
+  height: auto;
+  padding: 0.5rem;
   border-radius: 5px;
-  background-color: rgba(40, 2, 65, 0.863);
-  color: white;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.d{
+a:hover {
+  font-size: 5.5vw;
+  background-color: rgba(40, 2, 65, 0.863);
+  color: white;
+}
+
+.d {
   background-color: rgba(81, 255, 0, 0);
   width: 50px;
-  height: 870px;
+  height: 100%;
 }
 
-@media screen and (max-width: 1900px) {
+@media screen and (max-width: 600px) {
+  .p {
+    width: 80%;
+    margin-top: 60vh;
+    font-size: 5vw;
+  }
 
-  .p{
-    background-color: aqua;
-    margin-top: 760px;
+  .p:hover {
+    background-color: #6a006a; 
+
+  a {
+    font-size: 6vw;
   }
-  
-  .d{
-    height: 840px;
-  }
-  
-  a{
-    margin-left: 1690px;
+
+  .d {
+    height: 100%;
   }
 }
 
-@media screen and (max-width: 2560px){
-
-  body{
-    background-image: url(fundo1.png);
+@media screen and (max-width: 400px) {
+  .p {
+    width: 90%;
+    margin-top: 50vh;
+    font-size: 6vw;
   }
 
-    
+  .p:hover {
+    background-color: #6a006a; 
+  }
 
+  a {
+    font-size: 7vw;
+  }
+
+  .d {
+    height: 100%;
+  }
 }
+
 
 @media screen and (max-width: 1900px) {
 
