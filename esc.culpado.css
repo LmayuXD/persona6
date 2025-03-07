@@ -16,10 +16,10 @@
     }
 
     .button1 img{
-      margin-left: -4px;
+      margin-left: -3px;
       width: 30%;
       height: 150px;
-       margin-top: 45%;
+       margin-top: 40%;
     }
 
     .button3 img{
@@ -33,7 +33,7 @@
         margin-left: -30%;
         width: 30%;
         height: 150px;
-       margin-top: 45%;
+       margin-top: 40%;
       }
      .button5 img{
       margin-bottom: 40px;
@@ -45,8 +45,8 @@
      }
 
     .button6 img{
-        margin-left: -110px;
-        margin-top: 40px;
+        margin-left: -80px;
+        margin-top: 60px;
         background-color: #4400ff00;
         color: #ffffff; 
         font-family: "Italiana", serif;
@@ -57,20 +57,18 @@
         gap: 0.5rem;
         padding: 0.5rem 1rem;
         border-radius: 9px;
-        width: 300px;
-        height: 60px;
         cursor: pointer;
         font-size: 30px;
         font-weight: normal;
         border: 1px solid #300068;
-        width: 30%;
-        height: 150px;
+        width: 25%;
+        height: 120px;
 
     }
     .button7 {
     
       margin-left: 5%;
-      margin-top: 700px;
+      margin-top: 600px;
       backdrop-filter: blur(10px);
       background-color: #4400ffad;
       color: #ffffff; 
@@ -82,7 +80,7 @@
       gap: 0.5rem;
       padding: 0.5rem 1rem;
       border-radius: 9px;
-      width: 150px;
+      width: 175;
       height: 50px;
       cursor: pointer;
       font-size: 20px;
