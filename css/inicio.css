@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Italiana&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 /*GERAL*/
 * {
     margin: 0;
@@ -56,9 +57,11 @@ body {
     transform: perspective(500px) rotateY(20deg);
     transition: all 0.3s ease-in-out;
 }
+
 .fade-out {
     opacity: 0;
 }
+
 /*BOTÕES*/
 input {
     position: relative;
@@ -83,47 +86,63 @@ input:hover {
     border: solid 1px white;
     transform: perspective(500px) rotateY(20deg);
 }
+
 /*RESPONSIVIDADE*/
 
 /*COMPUTADOR*/
-@media (min-width: 1024px) and (max-width: 1500px){
+@media (min-width: 1024px) and (max-width: 1500px) {
     .topo {
         transform: translate(-45%, -50%);
     }
+
     .titulo {
         font-size: 90px;
         transform: perspective(600px) rotateY(20deg);
     }
+
     input {
         width: 450px;
         transform: perspective(600px) rotateY(30deg);
     }
+
     input:hover {
         transform: perspective(600px) rotateY(20deg);
     }
 }
+
 /*TABLET*/
 @media (min-width: 768px) and (max-width: 1024px) {
     .topo {
         transform: translate(-40%, -50%);
     }
+
     .titulo {
         font-size: 80px;
     }
+
     input {
         width: 400px;
     }
 }
+
 /*CELULAR*/
 @media (max-width: 768px) {
+    .background {
+        background: url(imagens/inicio0.1.png) no-repeat center center;
+    }
+
     .topo {
-        transform: translate(-43%, -50%);
+        transform: translate(-45%, -50%);
     }
+
     .titulo {
-        font-size: 70px;
+        right: 20px;
+        font-size: 40px;
     }
+
     input {
-        width: 400px;
-        right: 200px;
+        color: #fff;
+        width: 200px;
+        right: 100px;
     }
 }

@@ -466,6 +466,9 @@ svg path {
 
 /*COMPUTADOR*/
 @media (min-width: 1024px) and (max-width: 1920px) {
+  body {
+    overflow: hidden;
+  }
   /*GERAL*/
   #imagem-personagem {
     width: 16%;
@@ -495,6 +498,9 @@ svg path {
 /*TABLET*/
 @media (min-width: 768px) and (max-width: 1024px) {
   /*GERAL*/
+  body {
+    overflow: hidden;
+  }
   #imagem-personagem {
     width: 30%;
     height: 200%;
@@ -563,6 +569,9 @@ svg path {
 /*CELULAR*/
 @media (max-width: 768px) {
   /*GERAL*/
+  body {
+    overflow: hidden;
+  }
   #imagem-personagem {
     width: 40%;
     height: 200%;
@@ -575,17 +584,17 @@ svg path {
   #dialogo {
     width: 100%;
     height: 20%;
-    transform: translate(-50%, 100%);
+    transform: translate(-50%, 70%);
   }
   #texto-da-historia {
-    font-size: 35px;
+    font-size: 20px;
     margin-left: 15px;
     margin-top: 10px;
   }
   #prox button {
-    transform: translate(-50%, 600%);
+    transform: translate(-50%, 450%);
     width: 110%;
-    font-size: 40px;
+    font-size: 30px;
   }
   /*PARTE DO PROTAGONISTA*/
   #respostas {
@@ -598,11 +607,11 @@ svg path {
     transform: translate(-50%, -50%);
   }
   #respostas button {
-    top: 65%;
+    top: 60%;
     right: 0;
     width: 100%;
     max-height: 50%;
-    font-size: 30px;
+    font-size: 15px;
   }
   /*MENU*/
   .primeiro-menu {
