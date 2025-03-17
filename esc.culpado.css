@@ -15,6 +15,12 @@
     
     }
 
+    .p1{
+      font-family: "Italiana", serif;
+      color: #E2E8F0;
+      
+    }
+    
     .button1 img{
       margin-left: -3px;
       width: 30%;
@@ -103,8 +109,11 @@
       margin-left: -20%;
        width: 30%;
         height: 150px;
+        
     
     }
+
+
 
     .button1 img{
       margin-left: -4px;
@@ -199,6 +208,7 @@
       background-position: center;
       width: 100%;
       height: 120vh;}
+
   
       .custom-button img{
         margin-top: 1%;
@@ -206,7 +216,7 @@
         margin-left: -10%;
          width: 200px;
           height: 200px;
-
+          
       
       }
   
@@ -320,7 +330,7 @@
     margin-left: -10%;
      width: 200px;
       height: 200px;
-
+      
   
   }
 
