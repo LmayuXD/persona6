@@ -45,7 +45,7 @@
        margin-top: 30%;
     }
 
-    .p3{
+    .Heather{
       font-family: "Italiana", serif;
       color: #d81b1b;
       margin-left: 34%;
@@ -370,7 +370,7 @@
   .Lili{
     font-family: "Italiana", serif;
     color: #E2E8F0;
-    margin-left: 53%;
+    margin-left: 54%;
     margin-top: 16%;
     font-size: xx-large;
   }
@@ -383,7 +383,13 @@
       height: 200px;
 
   }
-    
+  .Heather{
+    font-family: "Italiana", serif;
+    color: #E2E8F0;
+   margin-left: 39%;
+   margin-top: -19%;
+   font-size: xx-large;
+  }
     .button4 img{
       margin-top: 3%;
       margin-bottom: 40px;
