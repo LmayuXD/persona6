@@ -20,6 +20,7 @@
       color: #E2E8F0;
       margin-left:70%;
       margin-top: 58%;
+      font-size:xx-large;
     }
     
     .button1 img{
@@ -29,6 +30,13 @@
        margin-top: 30%;
     }
 
+    .p2{
+      font-family: "Italiana", serif;
+      color: #ffffff;
+      margin-left:75%;
+      margin-top: 80%;
+      font-size:xx-large;
+    }
     .button3 img{
       margin-left: -20%;
       width: 30%;
