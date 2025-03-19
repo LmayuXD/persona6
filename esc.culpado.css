@@ -59,6 +59,7 @@
         height: 150px;
        margin-top: 30%;
       }
+
      .button5 img{
       margin-bottom: 40px;
       margin-left: -20%;
@@ -398,6 +399,14 @@
         height: 200px;
 
     }
+    
+    .Nathaniel{
+      font-family: "Italiana", serif;
+      color: #ffffff;
+      margin-left: 25%;
+    margin-top: 16%;
+    font-size: xx-large;
+    }
 
    .button5 img{
     margin-top: 1%;
@@ -409,6 +418,14 @@
 
    }
 
+   .Ash{
+    font-family: "Italiana", serif;
+    color: #E2E8F0;
+    margin-left: 16%;
+   font-size: xx-large;
+   margin-top: -21%;
+
+  }
   .button6 img{
       margin-left:-5%;
       margin-top: -1%;
@@ -437,7 +454,7 @@
   .button7 {
   
       margin-left: 900px;
-      margin-top: 37%;
+      margin-top: 20%;
       backdrop-filter: blur(10px);
       background-color: #4400ffad;
       color: #ffffff; 
