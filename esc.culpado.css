@@ -15,7 +15,7 @@
     
     }
 
-    .p1{
+    .Levi{
       font-family: "Italiana", serif;
       color: #E2E8F0;
       margin-left:70%;
@@ -30,7 +30,7 @@
        margin-top: 30%;
     }
 
-    .p2{
+    .Lili{
       font-family: "Italiana", serif;
       color: #ff0000;
       margin-left:75%;
@@ -49,7 +49,7 @@
       font-family: "Italiana", serif;
       color: #d81b1b;
       margin-left: 34%;
-      margin-top: -80%;
+      margin-top: -60%;
       font-size:x-large;
     }
       
@@ -351,6 +351,13 @@
       
   
   }
+  .Levi{
+    font-family: "Italiana", serif;
+    color: #E2E8F0;
+   margin-left: 65%;
+   font-size: xx-large;
+  margin-top: 16%;
+  }
 
   .button1 img{
     margin-top: 3%;
@@ -359,6 +366,13 @@
      width: 200px;
       height: 200px;
 
+  }
+  .Lili{
+    font-family: "Italiana", serif;
+    color: #E2E8F0;
+    margin-left: 53%;
+    margin-top: 16%;
+    font-size: xx-large;
   }
 
   .button3 img{
