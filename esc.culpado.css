@@ -21,6 +21,7 @@
       margin-left:70%;
       margin-top: 60%;
       font-size:x-large;
+      text-decoration:underline;
     }
     
     .button1 img{
@@ -32,10 +33,11 @@
 
     .Lili{
       font-family: "Italiana", serif;
-      color: #ff0000;
+      color: #ffffff;
       margin-left:75%;
-      margin-top: 100%;
+      margin-top: 87%;
       font-size:x-large;
+      text-decoration:underline;
     }
 
     .button3 img{
@@ -47,10 +49,11 @@
 
     .Heather{
       font-family: "Italiana", serif;
-      color: #d81b1b;
+      color: #ffffff;
       margin-left: 34%;
       margin-top: -60%;
       font-size:x-large;
+      text-decoration:underline;
     }
       
       .button4 img{
@@ -58,6 +61,15 @@
         width: 30%;
         height: 150px;
        margin-top: 30%;
+      }
+      .Nathaniel{
+        font-family: "Italiana", serif;
+        color: #ffffff;
+        margin-left: 8%;
+        margin-top: 49%;
+        font-size:x-large;
+        text-decoration:underline;
+
       }
 
      .button5 img{
@@ -67,6 +79,14 @@
       height: 150px;
       top: 10%;
 
+     }
+     .Ash{
+      font-family: "Italiana", serif;
+      color: #ffffff;
+      margin-top: -105%;
+      font-size:x-large;
+      margin-left: 10%;
+      text-decoration:underline;
      }
 
     .button6 img{
@@ -92,8 +112,8 @@
     }
     .button7 {
     
-      margin-left: 13%;
-      margin-top: 94%;
+      margin-left: 15%;
+      margin-top: 110%;
       backdrop-filter: blur(10px);
       background-color: #4400ffad;
       color: #ffffff; 
