@@ -11,7 +11,7 @@ body {
 }
 
 .p {
-  background-color: #800080; 
+  background-color: #4f37908e; 
   color: #ffffff; 
   font-family: "Italiana", serif;
   text-decoration: none;
@@ -27,21 +27,17 @@ body {
   font-size: 2vw;
   font-weight: normal;
   border: none; 
-  margin-top: 75vh;
-  left: 50%;
+  margin-top: 660px;
+  margin-left: 500px;
   transform: translateX(-50%);
   cursor: pointer; 
-  text-align: center; 
+
 }
 
-.p:hover {
-  background-color: #6a006a; 
-  transition: background-color 0.3s ease; 
-}
 
 a {
   color: #ffffff;
-  font-size: 5vw;
+  font-size: 30px;
   background-color: rgba(9, 0, 26, 0.788);
   font-family: "Italiana", serif;
   text-decoration: none;
@@ -49,12 +45,13 @@ a {
   height: auto;
   padding: 0.5rem;
   border-radius: 5px;
+  margin-left: 1700px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 a:hover {
-  font-size: 5.5vw;
+  font-size: 33px;
   background-color: rgba(40, 2, 65, 0.863);
   color: white;
 }
@@ -62,7 +59,7 @@ a:hover {
 .d {
   background-color: rgba(81, 255, 0, 0);
   width: 50px;
-  height: 100%;
+  height: 850px;
 }
 
 @media screen and (max-width: 600px){
