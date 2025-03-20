@@ -496,6 +496,7 @@ a:hover {
 @media screen and (max-width: 540px){
   
   body{
+    overflow: hidden;
     background-image: url(fundo1.6.png);
     height: 858px;
     width: 320px;

@@ -62,6 +62,7 @@ body{
   @media screen and (max-width: 540px){
   
     body{
+      overflow: hidden;
       background-image: url(2.png);
       height: 858px;
       width: 320px;
