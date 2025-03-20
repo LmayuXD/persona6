@@ -7,8 +7,8 @@ body{
 
 }
 .p{
-    margin-left: 25%;
-    margin-top: 25%;
+    margin-left: 30px;
+    margin-top: 770px;
     backdrop-filter: blur(10px);
     background-color: #4f37908e;
     color: #ffffff; 
@@ -20,8 +20,8 @@ body{
     gap: 0.5rem;
     padding: 0.5rem 1rem;
     border-radius: 9px;
-    width: 920px;
-    height: 125px;
+    width: 940px;
+    height: 135px;
     cursor: pointer;
     font-size: 30px;
     font-weight: normal;
@@ -33,7 +33,7 @@ body{
     font-size: 50px;
      background-color:  #4f37908e;
      margin-bottom: 50px;
-     margin-left: 1000px;
+     margin-left: 1050px;
      font-family: "Italiana", serif;
      text-decoration: none;
      width: 50px;
@@ -135,15 +135,15 @@ body{
   
     .p{
       background-color: #4f37908e;
-      margin-top: 340px;
-      width: 330px;
-      height: 230px;
-      font-size: 8px;
-      margin-left: 20px;
+      margin-top: 320px;
+      width: 220px;
+      height: 220px;
+      font-size: 18px;
+      margin-left: 70px;
     }
     
     .d{
-      height: 320px;
+      height: 290px;
     }
   
     a{
