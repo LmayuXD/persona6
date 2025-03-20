@@ -515,20 +515,22 @@ a:hover {
   }
 
   a{
-    font-size: 18px;
+    font-size: 19px;
     width: 22px;
     height: 10px;
     margin-left: 260px;
   }
   
   a:hover{
-    font-size: 19px;
-    width: 11px;
+    font-size: 20px;
+    width: 28px;
     height: 11px;
   }
   
   
 }
+
+
 
 
 
