@@ -480,17 +480,12 @@ a:hover {
   }
 
   a{
-    font-size: 20px;
+    font-size: 18px;
     width: 24px;
     height: 11px;
     margin-left: 250px;
   }
   
-  a:hover{
-    font-size: 24px;
-    width: 28px;
-    height: 11px;
-  }
   
   
 }
