@@ -503,26 +503,27 @@ a:hover {
 
   .p{
     background-color: #4f37908e;
-    margin-top: 560px;
+    margin-top: 590px;
     width: 330px;
     height: 110px;
     font-size: 16px;
+    margin-left: 210px;
   }
   
   .d{
-    height: 530px;
+    height: 560px;
   }
 
   a{
-    font-size: 20px;
-    width: 24px;
-    height: 11px;
-    margin-left: 250px;
+    font-size: 18px;
+    width: 22px;
+    height: 10px;
+    margin-left: 260px;
   }
   
   a:hover{
-    font-size: 24px;
-    width: 28px;
+    font-size: 19px;
+    width: 11px;
     height: 11px;
   }
   
