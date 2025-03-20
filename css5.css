@@ -44,14 +44,14 @@ body{
   }
   
   
-  a:hover {
+ /* a:hover {
     margin-left: 1725px;
     font-size: 50px;
     border-radius: 5px;
     background-color: rgba(40, 2, 65, 0.863);
     color: white;
     transition: all 0.3s ease;
-  }
+  } */
   
   .d{
     background-color: rgba(81, 255, 0, 0);

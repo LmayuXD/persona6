@@ -45,13 +45,13 @@ body{
   }
   
   
-  a:hover {
+  /*a:hover {
     font-size: 50px;
     border-radius: 5px;
     background-color: rgba(40, 2, 65, 0.863);
     color: white;
     transition: all 0.3s ease;
-  }
+  }*/
   
   .d{
     background-color: rgba(81, 255, 0, 0);
@@ -95,9 +95,9 @@ body{
       margin-left: 490px;
     }
 
-    a:hover{
+   /* a:hover{
         font-size: 26px;
-      }
+      }*/
     
   
   }
@@ -139,7 +139,7 @@ body{
       width: 220px;
       height: 220px;
       font-size: 18px;
-      margin-left: 70px;
+      margin-left: 48px;
     }
     
     .d{

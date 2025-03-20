@@ -44,13 +44,13 @@ body{
   }
   
   
-  a:hover {
+  /*a:hover {
     font-size: 45px;
     border-radius: 5px;
     background-color: rgba(40, 2, 65, 0.863);
     color: white;
     transition: all 0.3s ease;
-  }
+  }*/
   
   .d{
     background-color: rgba(81, 255, 0, 0);
@@ -78,9 +78,9 @@ body{
       margin-left: 1620px;
     }
 
-    a:hover {
+    /*a:hover {
       font-size: 42px;
-    }
+    }*/
 
   }
   
@@ -201,10 +201,10 @@ body{
       margin-left: 1000px;
     }
 
-    a:hover {
+   /* a:hover {
         font-size: 35px;
         border-radius: 5px;
-    }
+    }*/
   
   }
   
@@ -257,9 +257,9 @@ body{
       margin-left: 790px;
     }
   
-    a:hover{
+    /*a:hover{
       font-size: 34px;
-    }
+    }*/
   
   }
 
@@ -280,9 +280,9 @@ body{
         margin-left: 740px;
       }
 
-      a:hover{
+      /*a:hover{
         font-size: 31px;
-      }
+      }*/
 
     .p{
         background-color: #4f37908e;
@@ -366,9 +366,9 @@ body{
       margin-left: 540px;
     }
 
-    a:hover{
+    /*a:hover{
         font-size: 29px;
-      }
+      }*/
   
   }
   
@@ -399,9 +399,9 @@ body{
       margin-left: 460px;
     }
 
-    a:hover{
+    /*a:hover{
         font-size: 26px;
-      }
+      }*/
     
   
   }
